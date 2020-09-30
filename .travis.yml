@@ -13,3 +13,4 @@ before_script:
 
 script:
 - node_modules/.bin/newman run tests/InternetPlatform.postman_collection.json -e tests/DEV.postman_environment.json
+- node_modules/.bin/newman run tests/InternetPlatform.postman_collection.json -e tests/Production.postman_environment.json
