@@ -10,7 +10,14 @@ before_script:
 - npm --version
 - node_modules/.bin/newman --version
 
-
+notifications:
+  email:
+    recipients:
+      - m.kuznecov@fsknw.ru
+    on_success: never # default: change
+    on_failure: always # default: always
+    
+    
 script:
 - node_modules/.bin/newman run tests/InternetPlatform.postman_collection.json -e tests/DEV.postman_environment.json
 - node_modules/.bin/newman run tests/InternetPlatform.postman_collection.json -e tests/Production.postman_environment.json
