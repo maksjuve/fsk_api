@@ -14,6 +14,8 @@ notifications:
   email:
     recipients:
       - m.kuznecov@fsknw.ru
+      - i.boycov@fsknw.ru
+      - i.arbuzova@fsknw.ru
     on_success: never # default: change
     on_failure: always # default: always
     
