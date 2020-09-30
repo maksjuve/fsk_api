@@ -1,1 +1,554 @@
-
+{
+	"info": {
+		"_postman_id": "7f5c807d-d173-4de3-b2a2-dc0d7048e352",
+		"name": "InternetPlatform",
+		"description": "Выгрузки на интернет площадки",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CIAN",
+			"item": [
+				{
+					"name": "cian_garage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3f6a40bc-26b3-423e-b343-63416327536e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cian/garage",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"cian",
+								"garage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cian_commercial",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c16a7ef1-b15d-49df-8e01-e093b2d146ca",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cian/commercial",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"cian",
+								"commercial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cian_newFlat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2f26c574-d008-46e2-92aa-dda59996d3ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cian/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"cian",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "YANDEX",
+			"item": [
+				{
+					"name": "yandex_performanceZoom",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4310698f-b0f4-4a7d-be49-ddf4b2129b76",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformanceZoom/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"yandexPerformanceZoom",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "yandex_performanceMoskovskyi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3b6af911-f2c2-4d40-8b35-2b7bc43da2bd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformanceMoskovskyi/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"yandexPerformanceMoskovskyi",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "yandex_performancePushkinkyi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59fce017-6c6c-4fcb-a2ac-6ee9e32cfa6b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformancePushkinkyi/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"yandexPerformancePushkinkyi",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "yandex_garage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f07c98be-2569-4ea6-9dba-fd4b9b61e456",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandex/garage",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"yandex",
+								"garage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "yandex_commercial",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a724c4d0-c6b6-4770-a10d-f8b198438e37",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandex/commercial",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"yandex",
+								"commercial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "yandex_newFlat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "68cf527f-f5f7-46e0-adca-5fc32640a7e5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandex/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"yandex",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "InternetSite",
+			"item": [
+				{
+					"name": "fsknw_siteCommercial",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c27517e2-053d-4a3f-9b4b-47b004ea084c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/siteIntegration/commercial",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"siteIntegration",
+								"commercial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fsknw_siteNewflat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bb3ce113-93e1-4153-ba20-d07097dd9bc7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/siteIntegration/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"siteIntegration",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "domclick",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5f66db11-ce08-4cdf-8027-5fb03f8941a6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/domclick/newflat",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"hs",
+						"FSK_API",
+						"AdvertisingRealty",
+						"domclick",
+						"newflat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partapart.ru",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "53941ea7-0127-4d49-85ca-9a619afd7e60",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/partapart/newflat",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"hs",
+						"FSK_API",
+						"AdvertisingRealty",
+						"partapart",
+						"newflat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "piterRealty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3b44ed14-ecbe-4f96-b311-63404e0ecd3e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/piterRealty/newflat",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"hs",
+						"FSK_API",
+						"AdvertisingRealty",
+						"piterRealty",
+						"newflat"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "Wer34rd56",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "itservice",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "00a0036f-2b70-4a81-b5b1-8df2904ccded",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "dd3b684a-a0ab-4668-b95a-75649dba9748",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
