@@ -113,6 +113,41 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "cianZoom_newFlat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "df5cb9bc-02c4-4307-bd8e-b96639235fe2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cianzoom/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"cianzoom",
+								"newflat"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -371,6 +406,40 @@
 					"response": []
 				},
 				{
+					"name": "fsknw_agencyCommercial",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c5a93188-e58c-4106-b8ed-e43981a98867",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/agency/commercial",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"agency",
+								"commercial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "fsknw_siteNewflat",
 					"event": [
 						{
@@ -398,6 +467,40 @@
 								"hs",
 								"FSK_API",
 								"siteIntegration",
+								"newflat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fsknw_agencyNewflat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c4e0af95-445d-4183-875b-7054a83e3ca5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/agency/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"agency",
 								"newflat"
 							]
 						}
