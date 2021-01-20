@@ -15,11 +15,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3f6a40bc-26b3-423e-b343-63416327536e",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -50,11 +51,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c16a7ef1-b15d-49df-8e01-e093b2d146ca",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -85,10 +87,15 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "2f26c574-d008-46e2-92aa-dda59996d3ff",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"feed\"]['object'].length).to.be.above(0);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -120,11 +127,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "df5cb9bc-02c4-4307-bd8e-b96639235fe2",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -149,8 +157,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "YANDEX",
@@ -161,11 +168,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "4310698f-b0f4-4a7d-be49-ddf4b2129b76",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -196,11 +204,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3b6af911-f2c2-4d40-8b35-2b7bc43da2bd",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -231,11 +240,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "59fce017-6c6c-4fcb-a2ac-6ee9e32cfa6b",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -266,11 +276,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f07c98be-2569-4ea6-9dba-fd4b9b61e456",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -301,11 +312,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a724c4d0-c6b6-4770-a10d-f8b198438e37",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -336,10 +348,15 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "68cf527f-f5f7-46e0-adca-5fc32640a7e5",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"realty-feed\"]['offer'].length).to.be.above(0);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -365,8 +382,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "InternetSite",
@@ -377,11 +393,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c27517e2-053d-4a3f-9b4b-47b004ea084c",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -411,11 +428,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c5a93188-e58c-4106-b8ed-e43981a98867",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -445,10 +463,15 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bb3ce113-93e1-4153-ba20-d07097dd9bc7",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"realty-feed\"]['offer'].length).to.be.above(0);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -479,10 +502,15 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c4e0af95-445d-4183-875b-7054a83e3ca5",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"realty-feed\"]['offer'].length).to.be.above(0);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -507,8 +535,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "domclick",
@@ -516,10 +543,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5f66db11-ce08-4cdf-8027-5fb03f8941a6",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The response has at least One free flat\", () => {\r",
+							"    //parse the response json and test three properties\r",
+							"    let jsonBody = xml2Json(responseBody);\r",
+							"    pm.expect(jsonBody[\"complexes\"][\"complex\"].length).to.be.above(0);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -551,11 +583,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "53941ea7-0127-4d49-85ca-9a619afd7e60",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -586,10 +619,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3b44ed14-ecbe-4f96-b311-63404e0ecd3e",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The response has at least One free flat\", () => {\r",
+							"    //parse the response json and test three properties\r",
+							"    let jsonBody = xml2Json(responseBody);\r",
+							"    pm.expect(jsonBody[\"complexes\"]['complex'].length).to.be.above(0);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -609,6 +647,46 @@
 						"FSK_API",
 						"AdvertisingRealty",
 						"piterRealty",
+						"newflat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "yandex_Profitbase",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The response has at least One free flat\", () => {\r",
+							"    //parse the response json and test three properties\r",
+							"    let jsonBody = xml2Json(responseBody);\r",
+							"    pm.expect(jsonBody[\"realty-feed\"]['offer'].length).to.be.above(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/YandexProfitbase/newflat",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"hs",
+						"FSK_API",
+						"AdvertisingRealty",
+						"YandexProfitbase",
 						"newflat"
 					]
 				}
@@ -635,7 +713,6 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "00a0036f-2b70-4a81-b5b1-8df2904ccded",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -645,13 +722,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dd3b684a-a0ab-4668-b95a-75649dba9748",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
