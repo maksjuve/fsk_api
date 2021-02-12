@@ -551,8 +551,15 @@
 							"pm.test(\"The response has at least One free flat\", () => {\r",
 							"    //parse the response json and test three properties\r",
 							"    let jsonBody = xml2Json(responseBody);\r",
-							"    pm.expect(jsonBody[\"complexes\"][\"complex\"].length).to.be.above(0);\r",
-							"});"
+							"    let complex = jsonBody[\"complexes\"][\"complex\"];\r",
+							"\r",
+							"    if (typeof complex == \"object\") {\r",
+							"        pm.expect(complex.hasOwnProperty(\"id\")).to.eql(true);    \r",
+							"    } else {\r",
+							"        pm.expect(complex.length).to.be.above(0);    \r",
+							"    }\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
