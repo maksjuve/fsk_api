@@ -10,16 +10,155 @@
 			"name": "CIAN",
 			"item": [
 				{
+					"name": "Zoom Apart",
+					"item": [
+						{
+							"name": "cianZoom_newFlat",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cianzoom/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"cianzoom",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UP Pushkinkyi",
+					"item": [
+						{
+							"name": "cianPushkinkyi_newFlat",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cianNewflatPushkinkyi/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"cianNewflatPushkinkyi",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UP Moskovskyi",
+					"item": [
+						{
+							"name": "cianMoskovskyi_newFlat",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cianNewflatMoskovskyi/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"cianNewflatMoskovskyi",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cianMoskovskyi_commercial",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cianCommerciaMoskovskyi/commercial",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"cianCommerciaMoskovskyi",
+										"commercial"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "cian_garage",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -52,10 +191,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -88,9 +223,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"\r",
 									"pm.test(\"The response has at least One free flat\", () => {\r",
 									"    //parse the response json and test three properties\r",
@@ -120,42 +252,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "cianZoom_newFlat",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/cianzoom/newflat",
-							"host": [
-								"{{path}}"
-							],
-							"path": [
-								"hs",
-								"FSK_API",
-								"AdvertisingRealty",
-								"cianzoom",
-								"newflat"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -163,112 +259,265 @@
 			"name": "YANDEX",
 			"item": [
 				{
-					"name": "yandex_performanceZoom",
-					"event": [
+					"name": "Zoom Apart",
+					"item": [
 						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformanceZoom/newflat",
-							"host": [
-								"{{path}}"
+							"name": "yandex_performanceZoom",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
 							],
-							"path": [
-								"hs",
-								"FSK_API",
-								"AdvertisingRealty",
-								"yandexPerformanceZoom",
-								"newflat"
-							]
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Wer34rd56",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "itservice",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformanceZoom/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexPerformanceZoom",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "yandexZoom_newFlat",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"\r",
+											"pm.test(\"The response has at least One free flat\", () => {\r",
+											"    //parse the response json and test three properties\r",
+											"    let jsonBody = xml2Json(responseBody);\r",
+											"    pm.expect(jsonBody[\"realty-feed\"]['offer'].length).to.be.above(0);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexNewflatZoomApart/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexNewflatZoomApart",
+										"newflat"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "yandex_performanceMoskovskyi",
-					"event": [
+					"name": "UP Pushkinkyi",
+					"item": [
 						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformanceMoskovskyi/newflat",
-							"host": [
-								"{{path}}"
+							"name": "yandex_performancePushkinkyi",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
 							],
-							"path": [
-								"hs",
-								"FSK_API",
-								"AdvertisingRealty",
-								"yandexPerformanceMoskovskyi",
-								"newflat"
-							]
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformancePushkinkyi/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexPerformancePushkinkyi",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "yandexPushkinkyi_newFlat",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexNewflatPushkinkyi/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexNewflatPushkinkyi",
+										"newflat"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "yandex_performancePushkinkyi",
-					"event": [
+					"name": "UP Moskovskyi",
+					"item": [
 						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformancePushkinkyi/newflat",
-							"host": [
-								"{{path}}"
+							"name": "yandex_performanceMoskovskyi",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
 							],
-							"path": [
-								"hs",
-								"FSK_API",
-								"AdvertisingRealty",
-								"yandexPerformancePushkinkyi",
-								"newflat"
-							]
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexPerformanceMoskovskyi/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexPerformanceMoskovskyi",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "yandexMoskovskyi _newFlat",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexNewflatMoskovskyi/newflat",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexNewflatMoskovskyi",
+										"newflat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "yandexMoskovskyi _commercial",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/yandexCommercialMoskovskyi/commercial",
+									"host": [
+										"{{path}}"
+									],
+									"path": [
+										"hs",
+										"FSK_API",
+										"AdvertisingRealty",
+										"yandexCommercialMoskovskyi",
+										"commercial"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
 					"name": "yandex_garage",
@@ -277,10 +526,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -313,10 +558,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -349,9 +590,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"\r",
 									"pm.test(\"The response has at least One free flat\", () => {\r",
 									"    //parse the response json and test three properties\r",
@@ -394,10 +632,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -406,7 +640,13 @@
 					],
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{path}}/hs/FSK_API/siteIntegration/commercial",
 							"host": [
@@ -429,10 +669,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -464,9 +700,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"\r",
 									"pm.test(\"The response has at least One free flat\", () => {\r",
 									"    //parse the response json and test three properties\r",
@@ -503,9 +736,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"\r",
 									"pm.test(\"The response has at least One free flat\", () => {\r",
 									"    //parse the response json and test three properties\r",
@@ -538,15 +768,131 @@
 			]
 		},
 		{
+			"name": "Agency",
+			"item": [
+				{
+					"name": "trendRealty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"complexes\"]['complex'].length).to.be.above(0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/trend/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"trend",
+								"newflat"
+							]
+						},
+						"description": "Агентство недвижимости Тренд"
+					},
+					"response": []
+				},
+				{
+					"name": "nmarket",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"complexes\"]['complex'].length).to.be.above(0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/nmarket/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"nmarket",
+								"newflat"
+							]
+						},
+						"description": "Агентство недвижимости Тренд"
+					},
+					"response": []
+				},
+				{
+					"name": "piterRealty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"The response has at least One free flat\", () => {\r",
+									"    //parse the response json and test three properties\r",
+									"    let jsonBody = xml2Json(responseBody);\r",
+									"    pm.expect(jsonBody[\"complexes\"]['complex'].length).to.be.above(0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/piterRealty/newflat",
+							"host": [
+								"{{path}}"
+							],
+							"path": [
+								"hs",
+								"FSK_API",
+								"AdvertisingRealty",
+								"piterRealty",
+								"newflat"
+							]
+						},
+						"description": "Петербургская недвижимость."
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "domclick",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
 							"\r",
 							"pm.test(\"The response has at least One free flat\", () => {\r",
 							"    //parse the response json and test three properties\r",
@@ -591,9 +937,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
 							"\r",
 							""
 						],
@@ -621,55 +964,12 @@
 			"response": []
 		},
 		{
-			"name": "piterRealty",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"The response has at least One free flat\", () => {\r",
-							"    //parse the response json and test three properties\r",
-							"    let jsonBody = xml2Json(responseBody);\r",
-							"    pm.expect(jsonBody[\"complexes\"]['complex'].length).to.be.above(0);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{path}}/hs/FSK_API/AdvertisingRealty/piterRealty/newflat",
-					"host": [
-						"{{path}}"
-					],
-					"path": [
-						"hs",
-						"FSK_API",
-						"AdvertisingRealty",
-						"piterRealty",
-						"newflat"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "yandex_Profitbase",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
 							"\r",
 							"pm.test(\"The response has at least One free flat\", () => {\r",
 							"    //parse the response json and test three properties\r",
@@ -731,7 +1031,9 @@
 			"script": {
 				"type": "text/javascript",
 				"exec": [
-					""
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
 				]
 			}
 		}
